@@ -22,7 +22,7 @@
     },
     "bgText": {
       "type": "string",
-      "default": "ABOUT US"
+      "default": "Read More"
     },
     "subtitle": {
       "type": "string",
@@ -43,7 +43,7 @@
     },
     "btnText": {
       "type": "string",
-      "default": "Know More About Us"
+      "default": "Read More"
     },
     "btnLink": {
       "type": "string",

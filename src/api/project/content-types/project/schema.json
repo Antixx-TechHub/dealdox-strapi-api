@@ -4,7 +4,7 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Projects",
+    "displayName": "Success Stories",
     "description": ""
   },
   "options": {
@@ -39,6 +39,12 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "success_stories_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::success-stories-category.success-stories-category",
+      "inversedBy": "success_stories"
     }
   }
 }

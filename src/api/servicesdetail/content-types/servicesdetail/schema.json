@@ -4,7 +4,7 @@
   "info": {
     "singularName": "servicesdetail",
     "pluralName": "servicesdetails",
-    "displayName": "Services Details",
+    "displayName": "Glossary",
     "description": ""
   },
   "options": {
@@ -33,12 +33,18 @@
     },
     "btnText": {
       "type": "string",
-      "default": "View More"
+      "default": "Read More"
     },
     "slug": {
       "type": "uid",
       "required": true,
       "targetField": "title"
+    },
+    "glosary_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::glosary-category.glosary-category",
+      "inversedBy": "glossaries"
     }
   }
 }
