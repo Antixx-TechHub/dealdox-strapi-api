@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * partner router.
+ * partner router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;

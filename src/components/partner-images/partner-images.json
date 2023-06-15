@@ -1,27 +1,19 @@
 {
   "collectionName": "components_partner_images_partner_images",
   "info": {
-    "displayName": "Partner-Images",
-    "icon": "arrow-circle-right",
-    "description": ""
+    "displayName": "Partner-Images"
   },
   "options": {},
   "attributes": {
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
-        "images"
-      ]
-    },
-    "imageHover": {
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
       "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "multiple": false
     }
   }
 }
