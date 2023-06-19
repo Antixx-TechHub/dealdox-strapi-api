@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "success_categories",
+  "info": {
+    "singularName": "success-category",
+    "pluralName": "success-categories",
+    "displayName": "Success Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "success_stories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::successstory.successstory",
+      "inversedBy": "success_categories"
+    }
+  }
+}

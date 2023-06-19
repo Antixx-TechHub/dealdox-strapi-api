@@ -38,6 +38,12 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "success_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::success-category.success-category",
+      "mappedBy": "success_stories"
     }
   }
 }
