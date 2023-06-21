@@ -39,16 +39,16 @@
       "type": "uid",
       "targetField": "title"
     },
-    "success_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::success-category.success-category",
-      "mappedBy": "success_stories"
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "successcategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::successcategory.successcategory",
+      "mappedBy": "success_stories"
     }
   }
 }

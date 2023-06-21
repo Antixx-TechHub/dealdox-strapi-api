@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "success_categories",
+  "collectionName": "successcategories",
   "info": {
-    "singularName": "success-category",
-    "pluralName": "success-categories",
-    "displayName": "Success Category"
+    "singularName": "successcategory",
+    "pluralName": "successcategories",
+    "displayName": "Success Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
       "type": "uid",
@@ -22,7 +24,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::successstory.successstory",
-      "inversedBy": "success_categories"
+      "inversedBy": "successcategories"
     }
   }
 }
